@@ -1,0 +1,59 @@
+\documentclass[10pt,sigconf,balance,anonymous,nonacm]{acmart}
+
+\settopmatter{printfolios=true}
+
+\usepackage{graphicx}
+\graphicspath{{figures/}}
+\usepackage[labelformat=simple]{subcaption}
+\renewcommand\thesubfigure{(\alph{subfigure})}
+
+\usepackage[]{todonotes} % "disable" removes existing TODOS
+\usepackage{multirow}
+
+%\def\sectionautorefname{\S}
+%\def\subsectionautorefname{\S}
+%\def\subsubsectionautorefname{\S}
+\def\sectionautorefname{Section}
+\def\subsectionautorefname{Section}
+\def\subsubsectionautorefname{Section}
+\def\subfigureautorefname{Figure}
+
+\input{commands}
+
+\begin{document}
+
+\title{Add Paper Title Here}
+%add paper number of HotCRP or other paper submission system
+\subtitle{Paper \#TODO, \ref{lastpagebody} pages (excl. references and appendices)}
+
+
+\input{authors}
+
+%shorten author on running header
+%\renewcommand{\shortauthors}{M"ucke, et al.}
+
+\input{sections/abstract}
+
+\maketitle
+
+\input{sections/introduction}
+%\input{sections/background}
+%\input{sections/method}
+%\input{sections/analysis_num}
+%\input{sections/analysis_qir}
+%\input{sections/analysis_cdn}
+%\input{sections/discussion}
+\input{sections/conclusion}
+%\input{sections/acks}
+
+\label{lastpagebody}
+
+\bibliographystyle{ACM-Reference-Format}
+\bibliography{rfcs,ids}
+
+%\appendix
+%\input{text/appendix}
+
+\label{lastpage}
+
+\end{document}

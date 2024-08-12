@@ -1,0 +1,41 @@
+% \newcommand{\mytodo}[1]{\textcolor{red}{\textbf{Todo:} #1}}
+\newcommand{\result}[1]{}
+\newcommand{\tbd}{\todo}
+\newcommand{\mw}[1]{\hl{\textbf{MW: #1}}}
+\newcommand{\what}[1]{\textcolor{orange}{\textbf{What we do:} #1}}
+\newcommand{\preresult}[1]{\textcolor{olive}{\textbf{Findings:} #1}}
+\definecolor{myred}{cmyk}{0, 0.7808, 0.4429, 0.1412}
+\newcommand{\rem}[1]{\textcolor{myred}{#1}}
+\newcommand{\done}[1]{}
+
+\newcommand{\mytodo}[1]{\todo[color=red!40,inline]{#1}}
+\newcommand{\mydone}[1]{\todo[color=green!40,inline]{#1}}
+
+\usepackage{pifont}
+\newcommand{\cmark}{\ding{51}}%
+\newcommand{\xmark}{\ding{56}}%
+\newcommand{\pmark}{\ding{218}}%
+\newcommand{\onec}{\ding{202}}%
+\newcommand{\twoc}{\ding{203}}%
+\newcommand{\threec}{\ding{204}}%
+\newcommand{\fourc}{\ding{205}}%
+\newcommand{\fivec}{\ding{206}}%
+
+\usepackage{xspace}
+\newcommand{\etal}{\textit{et al.}~}
+\newcommand{\eg}{\textit{e.g.,}\xspace}
+\newcommand{\ie}{\textit{i.e.,}~}
+\newcommand{\cf}{\textit{cf.,}~}
+\newcommand{\etc}{\textit{etc.}~}
+\newcommand{\one}{({\em i})\xspace}
+\newcommand{\two}{({\em ii})\xspace}
+\newcommand{\three}{({\em iii})\xspace}
+\newcommand{\four}{({\em iv})\xspace}
+\newcommand{\five}{({\em v})\xspace}
+
+\makeatletter
+\renewcommand{\paragraph}[1]{\vspace*{0.03in}\noindent{\bf #1.}\hspace{0.25ex \@plus1ex \@minus.2ex}}
+\newcommand{\paragraphNoDot}[1]{\vspace*{0.03in}\noindent{\bf #1}\hspace{0.25ex \@plus1ex \@minus.2ex}}
+%\startsection{NAME}{LEVEL}{INDENT}{BEFORESKIP}{AFTERSKIP}{STYLE}
+%\z@ => shorthand for zero points, no indent
+\makeatother
